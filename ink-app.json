@@ -1,0 +1,16 @@
+{
+  "slug": "flip-rotate",
+  "title": "Flip & Rotate",
+  "repository": "https://github.com/siliconjungle/ink-app-flip-rotate",
+  "directory": "web",
+  "entry": "index.html",
+  "desktop": {
+    "entry": "flip-rotate",
+    "icon": {"svg": "web/icon.svg"},
+    "context": "self",
+    "fileTypes": ["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif", "image/bmp", ".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".bmp"],
+    "dropTypes": ["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif", "image/bmp", ".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".bmp"],
+    "window": {"width": 940, "height": 720}
+  },
+  "capabilities": ["world.read", "world.write", "desktop.open"]
+}

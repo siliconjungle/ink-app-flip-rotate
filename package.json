@@ -1,0 +1,1 @@
+{"name":"@ink-os/app-flip-rotate","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","check":"node --check web/app.mjs && node --check web/transforms.mjs"},"engines":{"node":">=24"},"license":"MIT"}

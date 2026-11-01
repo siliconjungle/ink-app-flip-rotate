@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flip &amp; Rotate</title><link rel="icon" href="icon.svg"><link rel="stylesheet" href="app.css"></head>
+<body><main class="app">
+  <header><img src="icon.svg" alt=""><div><h1>Flip &amp; Rotate</h1><p>Small edits, ready to save.</p></div><div class="open-actions"><button id="open" disabled>Open from Ink…</button><button id="upload" disabled>Upload…</button></div></header>
+  <div id="error" class="error" role="alert" hidden></div>
+  <div class="toolbar" aria-label="Image transforms">
+    <button id="left" disabled aria-label="Rotate left 90 degrees"><span aria-hidden="true">↶</span> Rotate left</button>
+    <button id="right" disabled aria-label="Rotate right 90 degrees"><span aria-hidden="true">↷</span> Rotate right</button>
+    <span class="divider"></span>
+    <button id="horizontal" disabled aria-label="Flip horizontally"><span aria-hidden="true">↔</span> Flip horizontal</button>
+    <button id="vertical" disabled aria-label="Flip vertically"><span aria-hidden="true">↕</span> Flip vertical</button>
+    <span class="spacer"></span><button id="undo" disabled>Undo</button><button id="reset" disabled>Reset</button>
+  </div>
+  <section class="preview" aria-label="Image preview">
+    <div id="empty" class="empty"><img src="icon.svg" alt=""><h2>A fresh perspective.</h2><p>Open an image or drop one here.<br>Rotate, flip, and save a PNG copy to Ink OS.</p></div>
+    <canvas id="canvas" aria-label="Transformed image preview" hidden></canvas>
+  </section>
+  <div class="image-info"><strong id="name">No image selected</strong><span id="dimensions"></span></div>
+  <div class="save-bar"><label for="filename">Save as</label><input id="filename" type="text" placeholder="Image-edited.png" disabled aria-label="Output file name"><button id="save" class="primary" disabled>Save copy</button><button id="preview" hidden>Open saved image</button></div>
+  <footer><span id="status" role="status">Connecting to Ink OS…</span><span>PNG output · transparency preserved</span></footer>
+  <input id="input" type="file" accept="image/png,image/jpeg,image/webp,image/avif,image/gif,image/bmp" hidden>
+</main><script type="module" src="app.mjs"></script></body></html>
