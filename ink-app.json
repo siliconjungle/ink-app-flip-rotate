@@ -6,11 +6,65 @@
   "entry": "index.html",
   "desktop": {
     "entry": "flip-rotate",
-    "icon": {"svg": "web/icon.svg"},
+    "icon": {
+      "svg": "web/icon.svg"
+    },
     "context": "self",
-    "fileTypes": ["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif", "image/bmp", ".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".bmp"],
-    "dropTypes": ["image/png", "image/jpeg", "image/webp", "image/avif", "image/gif", "image/bmp", ".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".bmp"],
-    "window": {"width": 940, "height": 720}
+    "fileTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/webp",
+      "image/avif",
+      "image/gif",
+      "image/bmp",
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".webp",
+      ".avif",
+      ".gif",
+      ".bmp"
+    ],
+    "dropTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/webp",
+      "image/avif",
+      "image/gif",
+      "image/bmp",
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".webp",
+      ".avif",
+      ".gif",
+      ".bmp"
+    ],
+    "window": {
+      "width": 940,
+      "height": 720
+    },
+    "preview": {
+      "fileTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/webp",
+        "image/avif",
+        "image/gif",
+        "image/bmp",
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".webp",
+        ".avif",
+        ".gif",
+        ".bmp"
+      ]
+    }
   },
-  "capabilities": ["world.read", "world.write", "desktop.open"]
+  "capabilities": [
+    "world.read",
+    "world.write",
+    "desktop.open"
+  ]
 }
